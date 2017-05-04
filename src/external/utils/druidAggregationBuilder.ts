@@ -206,7 +206,7 @@ export class DruidAggregationBuilder {
         let op = expression.op;
         aggregation = {
           name,
-          type: (attributeInfo.nativeType === 'LONG' ? 'long' : 'double') + op[0].toUpperCase() + op.substr(1),
+          type: "long" + op[0].toUpperCase() + op.substr(1),
           fieldName: refName
         };
       }
